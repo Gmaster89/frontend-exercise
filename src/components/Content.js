@@ -32,6 +32,7 @@ export default class Content {
     /***************************
      ***      Customers      ***
      ***************************/
+    
     const customersTitle = document.createElement("h3");
     customersTitle.innerText = "Customers";
 
