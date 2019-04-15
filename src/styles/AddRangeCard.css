@@ -13,3 +13,7 @@
 .add-range .fa-plus-circle {
   color: var(--color-text);
 }
+/* Hover styling added on add range icon similar to side bar icons */
+.add-range .fa-plus-circle:hover {
+  color: #d4a672;
+}

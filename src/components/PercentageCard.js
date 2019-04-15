@@ -41,9 +41,33 @@ export default class PercentageCard {
 
     // Help button
     const helpButton = document.createElement("button");
+    
+    // Event for on hover added on the Progress Card small icon at the bottom left
+    helpButton.addEventListener("mouseover", function() 
+    {
+      helpIcon.style.color = 'red'; // icon will turn to red on hover
+    }    
+    );
+    helpButton.addEventListener("click", function() 
+    {
+      // On click redirecting to the same page at the moment, 
+      // but could be redirecting to pne of the page of our application, 
+      //or can be routed to a diffrent route in case of single page application
+      // for example I am opening our own app'url on click,
+      window.open('http://localhost:9000');
+    }    
+    );
+
+    // The event to remove the styling added on mouseover event on the icon.
+    helpButton.addEventListener("mouseout", function() 
+    {
+      helpIcon.style.color = '';
+    }    
+    );
     helpButton.className = "help-button";
     const helpIcon = document.createElement("i");
-    helpIcon.className = "fas fa-question-circle";
+    // Icon type changed - icon will give the perception that there is more informton on the percentage card.
+    helpIcon.className = "fas fa-plus-circle";
     helpButton.appendChild(helpIcon);
 
     footerRow.appendChild(helpButton);

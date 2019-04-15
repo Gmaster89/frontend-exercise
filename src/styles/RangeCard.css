@@ -19,3 +19,7 @@
   border: none;
   color: inherit;
 }
+/* styling on range help icon to change colors on hover*/
+.range-card .help-button:hover {
+  color: red;
+}

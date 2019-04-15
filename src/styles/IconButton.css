@@ -7,3 +7,7 @@
 .icon-button i {
   color: var(--color-white);
 }
+/* all the cons to have hover fonctionalities for better UX */
+.icon-button i:hover {
+  color: #d4a672;
+}
